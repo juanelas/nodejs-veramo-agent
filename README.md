@@ -7,7 +7,7 @@ You can easily create a new agent in direcotry `veramo-agent` in your current di
 ```sh
 git clone https://github.com/juanelas/nodejs-veramo-agent.git veramo-agent
 cd veramo-agent
-npm i
+npm i --legacy-peer-deps
 ```
 
 Copy `template.env` to `.env`and fill the required variables (how to connect to the blockchain). You will need to get a project ID from infura <https://www.infura.io>. If testing use `sepolia` for `NETWORK_NAME`.
