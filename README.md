@@ -1,6 +1,18 @@
 # A node.js Veramo agent example
 
-First copy `template.env` to `.env`and fill the required variables. You will need to get a project ID from infura https://www.infura.io. 
+First copy `template.env` to `.env`and fill the required variables. You will need to get a project ID from infura https://www.infura.io.
+
+## Installation
+
+You can easily create a new agent in direcotry `veramo-agent` in your current directory with:
+
+```sh
+git clone https://github.com/juanelas/nodejs-veramo-agent.git veramo-agent
+cd veramo-agent
+npm i
+```
+
+If you need to create another agent just clone to a different directory. Each agent databse is stored in its root directory.
 
 ## Scripts for Distributed Identifiers (did:ethr method)
 
