@@ -1,5 +1,7 @@
 # A node.js Veramo agent example
 
+An example implementation of a [Veramo agent](https://veramo.io/docs/veramo_agent/introduction) for managing DIDs and VCs using node.js.
+
 ## Installation
 
 You can easily create a new agent in direcotry `veramo-agent` in your current directory with:
