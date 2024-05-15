@@ -1,7 +1,5 @@
 # A node.js Veramo agent example
 
-First copy `template.env` to `.env`and fill the required variables. You will need to get a project ID from infura https://www.infura.io.
-
 ## Installation
 
 You can easily create a new agent in direcotry `veramo-agent` in your current directory with:
@@ -12,7 +10,9 @@ cd veramo-agent
 npm i
 ```
 
-If you need to create another agent just clone to a different directory. Each agent databse is stored in its root directory.
+Copy `template.env` to `.env`and fill the required variables (how to connect to the blockchain). You will need to get a project ID from infura <https://www.infura.io>. If testing use `sepolia` for `NETWORK_NAME`.
+
+If you need to create another agent just clone to a different directory. Each agent databse is stored in its root directory. You can use the same `.env` variables for all the agents.
 
 ## Scripts for Distributed Identifiers (did:ethr method)
 
