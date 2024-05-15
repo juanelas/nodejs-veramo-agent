@@ -1,0 +1,39 @@
+{
+  "name": "nodejs-veramo-agent",
+  "version": "0.1.0",
+  "description": "",
+  "type": "module",
+  "scripts": {
+    "identifiers:list": "tsx src/bin/identifiers-list.ts",
+    "identifiers:create": "tsx src/bin/identifiers-create.ts",
+    "identifiers:add-service": "tsx src/bin/identifiers-service-add.ts",
+    "identifiers:remove-service": "tsx src/bin/identifiers-service-remove.ts",
+    "credentials:create": "tsx src/bin/credentials-create.ts",
+    "credentials:import": "tsx src/bin/credentials-import.ts",
+    "credentials:list": "tsx src/bin/credentials-list.ts",
+    "credentials:verify": "tsx src/bin/credentials-verify.ts",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "ts-standard": "^12.0.2",
+    "tsx": "^4.10.2",
+    "typescript": "^5.4.5"
+  },
+  "dependencies": {
+    "@veramo/core": "^6.0.0",
+    "@veramo/credential-w3c": "^6.0.0",
+    "@veramo/data-store": "^6.0.0",
+    "@veramo/did-manager": "^6.0.0",
+    "@veramo/did-provider-ethr": "^6.0.0",
+    "@veramo/did-resolver": "^6.0.0",
+    "@veramo/key-manager": "^6.0.0",
+    "@veramo/kms-local": "^6.0.0",
+    "dotenv": "^16.4.5",
+    "ethr-did-resolver": "^10.1.5",
+    "sqlite3": "^5.1.7",
+    "web-did-resolver": "^2.0.27"
+  }
+}
