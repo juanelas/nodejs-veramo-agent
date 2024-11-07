@@ -9,17 +9,17 @@ You can easily create a new agent in direcotry `veramo-agent` in your current di
 ```sh
 git clone https://github.com/juanelas/nodejs-veramo-agent.git veramo-agent
 cd veramo-agent
-npm i --legacy-peer-deps
+npm i
 ```
 
-Copy `template.env` to `.env`and fill the required variables (how to connect to the blockchain). You will need to get a project ID from infura <https://www.infura.io>. If testing use `sepolia` for `NETWORK_NAME`.
+Copy `template.env` to `.env` and fill the required variables (how to connect to the blockchain). You will need to get a project ID from infura <https://www.infura.io>. If testing use `sepolia` for `NETWORK_NAME`.
 
 If you need to create another agent just clone to a different directory. Each agent databse is stored in its root directory. You can use the same `.env` variables for all the agents.
 
 ## Scripts for Distributed Identifiers (did:ethr method)
 
 - `npm run identifier:list`  List owned/stored identifiers
-- `npm run identifier:create <alias>\nExample:  npm run identifier:create <myAlias>` Creates a new DID (did:ethr method) with alias `<myAlias>`
+- `npm run identifier:create <alias>` Creates a new DID (did:ethr method) with alias `<myAlias>`
 - `npm run identifier:add-service <didOrAlias> <serviceType> <serviceEndpoint>` Add a service to one of the owned identifiers. Example `npm run identifier:add-service myAlias Telegram @MyTelegramAccount`. The Ethereum account owning the DID must have funds to add the service
 - `npm run identifier:remove-service <didOrAlias> <serviceType> <serviceEndpoint>` Remove a service for one of the owned identifiers. Example `npm run identifier:remove-service myAlias Telegram @MyTelegramAccount`. The Ethereum account owning the DID must have funds to add the service
 
