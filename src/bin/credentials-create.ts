@@ -21,7 +21,6 @@ async function main (): Promise<void> {
     },
     proofFormat: 'jwt'
   })
-  await agent.dataStoreSaveVerifiableCredential({ verifiableCredential })
   console.log('New credential created')
   console.log(JSON.stringify(verifiableCredential, null, 2))
   console.log('----- ONE-LINE EXPORT -----')
